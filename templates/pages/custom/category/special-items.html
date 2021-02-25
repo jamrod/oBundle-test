@@ -15,7 +15,7 @@ category:
         <link rel="next" href="{{pagination.category.next}}">
     {{/if}}
 {{/partial}}
-<p>I was added to the category</p>
+
 {{#partial "page"}}
 
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
@@ -48,7 +48,11 @@ category:
             </aside>
         {{/if}}
     {{/if}}
-
+            <div id="new-buttons">
+                <button id="add-all">Add All to Cart</button>
+                <button id="remove-all">Remove All Items</button>
+                
+            </div>
     <main class="page-content" id="product-listing-container">
         {{> components/category/product-listing}}
         {{{region name="category_below_content"}}}
@@ -57,3 +61,7 @@ category:
 
 {{/partial}}
 {{> layout/base}}
+{{inject "categoryProducts" category.products}}
+<script>
+    let jsContext = JSON.parse({{jsContext}})
+</script>
