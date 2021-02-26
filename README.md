@@ -22,6 +22,10 @@ The docs were not accurate or possibly just incomplete in that the description o
 
 The Bonus funtionality was pretty straight forward. The Customer object was available in the context and easily accessible with handlebars, {{ customer.name }}
 
+One final problem occured when updating the theme. None of my edits appear on the live website after bundling and pushing. I read and re-read all of the documentation on bundling and pushing and went through the entire process multiple times. Checked all my file permissions on new files and folders, reached out to tech support and searched through the forums to no avail. I'm not sure why no theme edits appear in the live version despite appearing exactly as designed on my local environment. I would like to know the answer and perhaps you will let me know if you choose to move forward with me in this process.
+
+Thank you for the opportunity.
+
 ### Links
 
 Github repo: [https://github.com/jamrod/oBundle-test](https://github.com/jamrod/oBundle-test)
