@@ -11,7 +11,7 @@ export default class Custom extends PageManager {
         const addAll = document.querySelector("#add-all")
         const removeAll = document.querySelector("#remove-all")
         const products = jsContext.categoryProducts
-        var currentCart = jsContext.currentCart
+        let currentCart = jsContext.currentCart
         getCart('/api/storefront/carts')
             .then(data => checkCart(data))
             .catch(err => console.log(err))

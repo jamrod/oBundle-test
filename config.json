@@ -1,6 +1,6 @@
 {
-  "name": "Cornerstone",
-  "version": "5.2.0",
+  "name": "Cornerstone-JCR-Edits",
+  "version": "0.5.2.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,
