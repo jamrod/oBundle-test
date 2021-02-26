@@ -14,8 +14,12 @@ category:
     {{#if pagination.category.next}}
         <link rel="next" href="{{pagination.category.next}}">
     {{/if}}
+    <!-- <link href="{{cdn '/assets/css/special-items.css'}}" rel="stylesheet"> -->
 {{/partial}}
 
+{{#if customer }}
+<div class="name-banner"><span>Hi, {{customer.name}}</span></div>
+{{/if}}
 {{#partial "page"}}
 
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
@@ -48,10 +52,11 @@ category:
             </aside>
         {{/if}}
     {{/if}}
-            <div id="new-buttons">
+    
+            <div>
                 <button id="add-all">Add All to Cart</button>
                 <button id="remove-all">Remove All Items</button>
-                
+                <span id="alert-space"></span>
             </div>
     <main class="page-content" id="product-listing-container">
         {{> components/category/product-listing}}
@@ -62,6 +67,7 @@ category:
 {{/partial}}
 {{> layout/base}}
 {{inject "categoryProducts" category.products}}
+{{inject "currentCart" cart_id}}
 <script>
     let jsContext = JSON.parse({{jsContext}})
 </script>

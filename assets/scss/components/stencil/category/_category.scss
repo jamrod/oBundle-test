@@ -2,10 +2,25 @@
 // CATEGORY (CSS)
 // =============================================================================
 
-
 // Category header
 // -----------------------------------------------------------------------------
 
 .category-header-image {
-    width: 100%;
+  width: 100%;
+}
+
+#remove-all {
+  visibility: hidden;
+}
+
+#alert-space {
+  color: red;
+}
+
+.name-banner {
+  width: 100%;
+  min-height: 20px;
+  background-color: aliceblue;
+  text-align: right;
+  padding: 1%;
 }
